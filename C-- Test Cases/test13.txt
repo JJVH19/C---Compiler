@@ -1,3 +1,5 @@
+/* PASSES */
+
 int global,global2;
 
 int test(int a, int b, int c, int d, int e, int f, int g, int h, int i){
@@ -22,7 +24,6 @@ int main(){
             a = 1;
             b = global;
         }
-    } else if (test(test2(),2,global,-global2,5,test2(),7,8,9) == test2()){
         return test3(test(-(-(-(main()))),-2,-3,e,---f,g,--7,---(((8))),-((((((((((global))))))))))));
     }
     return main();

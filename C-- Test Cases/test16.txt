@@ -1,4 +1,6 @@
-int lol(int y, int u, int p){
+/* PASSES */
+
+int test(int y, int u, int p){
     println(y);
     println(u);
     println(p);
@@ -13,8 +15,8 @@ int main() {
     y = 123 - 456;
     println(y);
 
-    lol(x,y,-99);
-    lol(y,x,99);
+    test(x,y,-99);
+    test(y,x,99);
 
     x = 123 * 3;
     println(x);
@@ -22,8 +24,8 @@ int main() {
     y = 123 / 3;
     println(x);
 
-    lol(x,y,-88);
-    lol(y,x,88);
+    test(x,y,-88);
+    test(y,x,88);
 
     x = (123);
     println(x);
@@ -31,6 +33,6 @@ int main() {
     y = -123;
     println(x);
 
-    lol(x,y,-77);
-    lol(y,x,77);
+    test(x,y,-77);
+    test(y,x,77);
 }

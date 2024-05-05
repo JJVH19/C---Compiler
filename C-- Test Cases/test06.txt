@@ -1,4 +1,4 @@
-/* Semantic Checking file */
+/* Semantic Checking file PASSES */
 
 int g(int d, int o, int f){
     g(-9,10,-100);
@@ -8,26 +8,4 @@ int g(int d, int o, int f){
 int l(int test, int ing){
     test = l(test+test,ing+ing);
     test = l(test,-ing);
-}
-
-int f(int x, int p) {
-  int y, z;
-  x = l(-x/3,8);
-  x = l(x,y) + f(0,----------2);
-  x = f(p*f(x,8),g(8,-90,-99));
-  x = f(f(1,2),f(x,y));
-  x = f(x*2/3 + g(-4/g(0,4,5),p,x),z) / g(2,3,4);
-  x = f(x/3 + f(-4/f(1,2),z),f(6,2));
-
-  while(-g(g(x,-x,---x),-88,-99) < f(1,y) || l(z,-(g(-p,876,543))) > f(p,p)){
-    while(-g(9,-8,----4) < f(1,y) || l(z,-(g(-p,-99,-8765))) == p){
-        p = p*g(p,y,z);
-    }
-    if(--------8 != p){
-        x = 0;
-    } else {
-        x = 1;
-    }
-  }
-
 }

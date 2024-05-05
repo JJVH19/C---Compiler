@@ -1,5 +1,5 @@
 /*
- * A sample C-- program
+ * A sample C-- program PASSES
  */
 
 int a, b;
