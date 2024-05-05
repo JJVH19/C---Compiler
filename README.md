@@ -11,4 +11,4 @@
 * * --gen_code == will print in standard out assembly code to be used in a SPIM environment
 * An example to run the file
 * * ./compile --chk_decl --print_ast --gen_code < fileName > MIPS.s
-* * spim -f MIPS.s (assuming you have a SPIM installed)
+* * spim -f MIPS.s (assuming you have SPIM installed)
