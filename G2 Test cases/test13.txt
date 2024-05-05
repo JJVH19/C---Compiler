@@ -1,7 +1,0 @@
-/* FAILS */
-int a;
-
-/* error */
-int a(){
-
-}

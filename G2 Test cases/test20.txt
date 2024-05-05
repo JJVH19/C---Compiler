@@ -1,9 +1,0 @@
-/* PASSES */
-
-int x, y;
-
-int main() {
-    x = 1;
-    println(x);
-    println(6);
-}
