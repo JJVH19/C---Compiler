@@ -1,0 +1,14 @@
+int g(int x, int y){
+    return x+y;
+}
+
+int f(int d, int o, int f){
+    int a,b,c;
+    while(-g(d,-88) < a){
+        return -a/b;
+    }
+
+    if(b == g(a,b) && f(f,-c,9) < c || ---b == -a){ /* should fail here */
+        return -a*c/b;
+    }
+}

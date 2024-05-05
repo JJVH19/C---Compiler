@@ -1,0 +1,19 @@
+/*
+ * A sample C-- program
+ */
+
+int a, b;
+
+int f(int x) {
+  int y, z;
+
+  x = 1;
+  y = 2;
+  while (x+f(y) > 0) {
+    if (y <= x) {
+      y = y + 2;
+      x = x * 2 - y + 9 / 2;
+    }
+  }
+  return x;
+}

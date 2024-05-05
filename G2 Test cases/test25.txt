@@ -1,0 +1,15 @@
+/*
+ * A sample G2 program
+ */
+int global;
+int main() {
+    int x;
+    global = 9;
+    if (x > 0)
+	    println(1100);
+    else
+        println(global);
+    println(55);
+    println(x);
+    return global;
+}

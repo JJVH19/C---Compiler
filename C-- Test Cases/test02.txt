@@ -1,0 +1,31 @@
+/* PASSES */
+
+int a, b;
+
+int f(int x) {
+  int y, z;
+
+  x = 1;
+  y = 2;
+  while (x+f(y) > 0 && y+f(y) < 0) {
+    if (y <= x || y != 8) {
+      y = y + 2;
+      x = x * 2 - y;
+    }
+  }
+  return x;
+}
+
+int main(int x) {
+  int y, z;
+
+  x = 1;
+  y = 2;
+  while (a+f(y) > 0 && b+f(y) < 0) {
+    if (a <= x || b != 8) {
+      a = b + 2;
+      x = b * 2 - a + b / 2;
+    }
+  }
+  return b;
+}

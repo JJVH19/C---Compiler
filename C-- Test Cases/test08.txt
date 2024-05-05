@@ -1,0 +1,10 @@
+/* ID with incorrect type in function argument list */
+
+int f(int x, int y, int z) {
+    int w;
+    w = x*y+z;
+}
+
+int main() {
+    f(0, 2*f-1, 1);    /* << f is of the wrong type */
+}

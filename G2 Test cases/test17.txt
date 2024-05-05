@@ -1,0 +1,55 @@
+/*PASSES*/
+
+int temp,temp2,temp3;
+int x;
+int y;
+int test(){
+    int x;
+    int p;
+    x = 999;
+    p = x;
+    p = 89;
+    x = 87;
+    temp = 46464;
+    println(temp);
+    println(x);
+    println(p);
+}
+
+int test_two(int l, int o, int test, int oper, int p){
+    println(l);
+    println(o);
+    println(test);
+    println(oper);
+    println(p);
+}
+
+int main(){
+    int z,v,s,m;
+    x = 12345;
+    y = x;
+    z = 12;
+    v = z;
+    temp2 = 9090;
+    temp3 = temp2;
+    println(temp3);
+    s = temp3;
+    m = 88;
+    temp3 = m;
+    println(m);
+    println(temp3);
+    test();
+    println(x);
+    println(y);
+    println(z);
+    println(v);
+    println(s);
+    println(4);
+    println(5);
+    println(6);
+    println(7);
+    test();
+    println(temp2);
+    test_two(x,m,66,77,88);
+    test_two(9090,8080,7070,6060,5050);
+}

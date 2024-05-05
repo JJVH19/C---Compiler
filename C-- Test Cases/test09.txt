@@ -1,0 +1,21 @@
+int g(int x, int y){
+    return;
+}
+
+int f(int d, int o, int f){
+    int a,b,c;
+    f(-9,-a,-100); /*should fail here */
+    d = -g(-f(-f(d,d,7),o,f) + -f(g(d,f),b,6),f);
+    while(-g(d,-88) < f(a,d,f) || f(f(-90,---c,f),o,f) > a){
+
+    }
+}
+
+int main(){
+    g(1,2);
+    if(-g(-988654,-88) < f(1,9,9)){
+        return g(3,4);
+    } else{
+        return f(-1,-2,-3);
+    }
+}

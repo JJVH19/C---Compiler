@@ -1,0 +1,17 @@
+/* PASSES */
+
+int x, y;
+int f(int x, int y, int u, int j) { }
+
+int g() {
+    g();
+    g();
+    f(1,2,3,4);
+    x = 9;
+    y = 10;
+    return y;
+}
+
+int main(){
+    g();
+}

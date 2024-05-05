@@ -1,0 +1,3 @@
+/* FAILS */
+int x,y,z;
+int y;

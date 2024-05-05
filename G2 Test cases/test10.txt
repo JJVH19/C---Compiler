@@ -1,0 +1,17 @@
+/* PASSES */
+int b (int x, int y){
+    if (x < y)
+        return x;
+}
+
+int testing;
+
+int c(){
+    int x;
+    int y;
+
+    if(x == y)
+        return testing;
+    else
+        return x;
+}

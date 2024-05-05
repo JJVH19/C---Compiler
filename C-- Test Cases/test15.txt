@@ -1,0 +1,40 @@
+/* codegen: recursion */
+
+int factorial(int n) {
+    if (n <= 0) {
+        return 1;
+    }
+    else {
+        return n * factorial(n-1);
+    }
+}
+
+int fib(int n) {
+    if (n <= 0) {
+        return 1;
+    }
+    else {
+        return fib(n-1) + fib(n-2);
+    }
+}
+
+int n;
+int main() {
+    int i, x;
+
+    n = 7;
+
+    i = 0;
+    while (i <= n) {
+        x = factorial(i);
+	    println(x);
+	    i = i + 1;
+    }
+
+    i = 0;
+    while (i <= n) {
+        x = fib(i);
+	    println(x);
+	    i = i + 1;
+    }
+}

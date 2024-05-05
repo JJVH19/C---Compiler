@@ -1,0 +1,19 @@
+int g(int h, int i){
+    return;
+}
+
+int global,global2;
+int main(){
+    int x,y,z;
+    int l;
+    global = g(2/g(-x,global2)*--x/99+g(1,2)-g(global,2),2/g(-global2,global)*--x/99+g(1,2)-g(1,2));
+    x = x * -x + 1 + -g(y,-z) / g(2/g(-l,x)*--x/99+g(1,main())-g(y,---l), 2/g(g(1,g(2,g(3,4))),9)*--y/99+g(1,2)-g(-x,l));
+    main();
+    x = 2/g(g(1,g(2,g(3,4))),x);
+    return g(2/g(-x,x)*--x/99+g(1,2)-g(1,2),2/g(-main(),x)*--x/99+g(1,2)-g(1,2));
+}
+
+int f(int f){
+    f = 0;
+    f(0); /* Fails here */
+}

@@ -1,0 +1,24 @@
+/*
+ * A sample C-- program
+ */
+
+int a, b;
+
+int f(int x, int p) {
+  int y, z;
+
+  x = 1;
+  y = 2;
+  x = x+y;
+  y = -x + 99;
+
+  while (x+f(0,y) > 0 && y+f(y,0) < 0) {
+    if (y <= x || y != 8) {
+      y = y + 2;
+      x = x * 2 - y;
+    }
+  }
+
+
+  return x;
+}

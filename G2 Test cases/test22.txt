@@ -1,0 +1,6 @@
+int f, x;
+
+int main() {
+   f = 5;
+   x = f;
+}

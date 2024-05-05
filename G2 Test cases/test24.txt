@@ -1,0 +1,38 @@
+
+int prints(int b, int c, int x, int y, int z) {
+	int a;
+	{
+		{
+			a = 1;
+			println(a);
+		}
+		{
+			{
+				a = 2;
+				println(a);
+			}
+		}
+	}
+
+	{
+		{
+			{
+				println(3);
+			}
+		}
+	}
+	println(b);
+	println(c);
+	println(x);
+	println(y);
+	println(z);
+}
+
+
+int main() {
+	int x, y, z;
+	x = 6;
+	y = 7;
+	z = 8;
+	prints(4, 5, x, y, z);
+}

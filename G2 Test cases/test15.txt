@@ -1,0 +1,6 @@
+/*PASSES*/
+int main(){
+    int x;
+    x = 12345;
+    println(x);
+}

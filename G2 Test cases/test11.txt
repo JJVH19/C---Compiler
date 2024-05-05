@@ -1,0 +1,11 @@
+/* FAILS */
+int c(int x, int y){
+/* no error */
+    x = y;
+}
+
+int a(){
+/* error has mem leaks why */
+    int x;
+    x = c;
+}

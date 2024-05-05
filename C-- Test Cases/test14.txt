@@ -1,0 +1,3 @@
+int test(int one){
+    test((one+1));
+}
