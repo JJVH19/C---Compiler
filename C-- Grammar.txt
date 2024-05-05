@@ -1,0 +1,64 @@
+<prog> ::= <type> ID <var_or_func> <prog> | E
+
+<var_or_func> ::= SEMI | <decl_or_func>
+
+<decl_or_func> ::= COMMA <id_list> SEMI
+                | LPAREN <opt_formals> RPAREN LBRACE <opt_var_decls> <opt_stmt_list> RBRACE
+
+<id_list> ::= ID | ID COMMA <id_list>
+
+<type> ::= kwINT
+
+<opt_formals> ::= <formals> | E
+
+<formals> ::= <type> ID COMMA <formals> | <type> ID
+
+<opt_var_decls> ::= <var_decl> <opt_var_decls> | E
+
+<var_decl> := <type> <id_list> SEMI
+
+<opt_stmt_list> ::= <stmt> <opt_stmt_list> | E
+
+<stmt> ::= <while_stmt>
+           | <if_stmt>
+           | ID <assg_or_fn_call>
+           | <return_stmt>
+           | LBRACE <opt_stmt_list> RBRACE
+           | SEMI
+
+<while_stmt> ::= kwWHILE LPAREN <bool_exp> RPAREN <stmt>
+
+<if_stmt> ::= kwIF LPAREN <bool_exp> RPAREN <stmt>
+            | kwIF LPAREN <bool_exp> RPAREN <stmt> kwELSE <stmt>
+
+<return_stmt> ::= kwRETURN SEMI | kwRETURN <arith_exp> SEMI
+
+<assg_or_fn_call> ::= <assg_stmt> | ID <fn_call> SEMI
+
+<assg_stmt> ::= opASSG <arith_exp> SEMI
+
+<fn_call> ::= LPAREN <opt_expr_list> RPAREN
+
+<opt_expr_list> ::= E | <expr_list>
+
+<expr_list> ::= <arith_exp> COMMA <expr_list> | <arith_exp>
+
+<bool_exp> ::= <bool_exp1> <opt_or>
+<opt_or> ::= || <bool_exp1> <opt_or> | E
+<bool_exp1> ::= <bool_exp2> <opt_and>
+<opt_and> ::= && <bool_exp2> <opt_and> | E
+<bool_exp2> ::= <arith_expr> <relop> <arith_exp>
+
+<arith_exp> ::= <arith_exp1> <opt_add_sub>
+<opt_add_sub> ::= opADD <arith_exp1> <opt_add_sub> | opSUB <arith_exp1> <opt_add_sub> | E
+<arith_exp1> ::= <arith_exp2> <opt_mul_div>
+<opt_mul_div> ::= opMUL <arith_exp2> <opt_mul_div> | opDIV <arith_exp2> <opt_mul_div> | E
+<arith_exp2> ::= opSUB <arith_exp2> | <arith_exp3>
+<arith_exp3> ::= ID <opt_func_call> | INTCON | LPAREN <arith_exp> RPAREN
+<opt_func_call> ::= <fn_call> | E
+
+<arith_op> ::= opADD | opSUB | opMUL | opDIV
+
+<relop> ::= opEQ | opNE | opLE | opLT | opGE | opGT
+
+<logical_op> ::= opAND | opOR
