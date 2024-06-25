@@ -1,4 +1,4 @@
-# C---Compiler
+# C-- Compiler
 
 * This is a full compiler a subset language of C, called C--
 * To compile it, in the command line type 
